@@ -124,6 +124,7 @@ Before we wreck this thing:
 
 #### Silly Viruses and Pranks 🤪
 Search for harmless joke programs:
+- **Goose Virus:** [here](https://desktop-goose.en.softonic.com/?ex=RAMP-3582.4&rex=true)
 - **MEMZ Trojan:** Creates crazy visual effects (safe VM-only version)
 - **YouAreAnIdiot:** Classic annoying pop-up prank
 - **Matrix Rain:** Fills screen with falling text
@@ -131,7 +132,7 @@ Search for harmless joke programs:
 
 **Where to find safe test viruses:**
 - EICAR test file (standard test virus that's not actually harmful)
-- GitHub repositories with educational malware samples
+- [Github Repositories](https://github.com/Da2dalus/The-MALWARE-Repo) with educational malware samples
 - VM-specific prank programs
 
 ### 🎯 Interactive Question 3
