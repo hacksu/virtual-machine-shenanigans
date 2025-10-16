@@ -1,4 +1,4 @@
-# Virtual Machine Shenanigans: A Fun Guide to VMs! 🎮💻
+# Virtual Machine Shenanigans: A Fun Guide to VMs!
 
 **Duration:** 1 hour  
 **Audience:** University students  
@@ -15,7 +15,7 @@
 
 ---
 
-## Part 1: What is a Virtual Machine? (15 min) 🤔
+## Part 1: What is a Virtual Machine? (15 min) 
 
 ### The Simple Explanation
 A **Virtual Machine (VM)** is like a computer inside your computer! It's a software program that pretends to be a real computer. Think of it like playing a video game on an emulator - except you're emulating an entire computer!
@@ -25,7 +25,7 @@ A **Virtual Machine (VM)** is like a computer inside your computer! It's a softw
 - **Multiple OS:** Run Windows on Mac, Linux on Windows, etc.
 - **Snapshots:** Take "save points" like in a video game
 - **Learning:** Perfect for experimenting without consequences
-- **Fun:** Destroy stuff without real-world damage! 💥
+- **Fun:** Destroy stuff without real-world damage! 
 
 ### The Magic Behind It
 Your physical computer (the **host**) runs special software called a **hypervisor** (like VirtualBox). This hypervisor creates fake hardware for the **guest** operating system to use. The guest OS thinks it's running on real hardware, but it's actually just software!
@@ -121,47 +121,8 @@ Before we wreck this thing:
 2. **Verify it's a VM** (Check the VirtualBox window title)
 3. **Disconnect network sharing** (Settings → Network → Disable if you want extra safety)
 
-### Fun Ways to Destroy Your VM
 
-#### Method 1: Fork Bomb (The Simple One) 💥
-This creates infinite processes until the system crashes!
-
-**On Linux:**
-```bash
-:(){ :|:& };:
-```
-
-**On Windows (batch file):**
-```batch
-:loop
-start %0
-goto loop
-```
-
-**What happens:** System freezes, becomes unresponsive, basically a "too many tabs" situation times 1000!
-
-#### Method 2: Fill the Disk (The Slow Death) 💾
-```bash
-# Linux
-cat /dev/zero > ~/bigfile
-
-# Windows (PowerShell)
-fsutil file createnew C:\bigfile 10000000000
-```
-
-**What happens:** Disk fills up, programs can't save files, OS gets cranky!
-
-#### Method 3: Delete Important Files (The Nuclear Option) ☢️
-**⚠️ ONLY IN A VM! SERIOUSLY!**
-
-**Linux:**
-```bash
-sudo rm -rf --no-preserve-root /
-```
-
-**What happens:** Everything disappears. OS can't function. Total chaos!
-
-#### Method 4: Silly Viruses and Pranks 🤪
+#### Silly Viruses and Pranks 🤪
 Search for harmless joke programs:
 - **MEMZ Trojan:** Creates crazy visual effects (safe VM-only version)
 - **YouAreAnIdiot:** Classic annoying pop-up prank
@@ -195,22 +156,6 @@ Search for harmless joke programs:
 - **Sandboxing is important:** This is why we use VMs!
 - **Malware is real:** But now you know what it does!
 
-### 🎯 Interactive Question 4
-**"Now that you've seen a VM destroyed, what safety practices will you use on your real computer?"**
-
-*Good answers: Regular backups, don't run suspicious files, keep OS updated, use antivirus, don't use sudo carelessly*
-
----
-
-## Bonus Content (If Time Permits) 🎁
-
-### Cool Things to Try in Your VM
-1. **Install a different desktop environment** (Linux)
-2. **Set up a web server** (Apache or Nginx)
-3. **Try penetration testing tools** (Kali Linux)
-4. **Run old software** (Windows 98 games!)
-5. **Create a network of VMs** (Advanced networking)
-
 ### VM Pro Tips
 - **Keyboard shortcuts:**
   - Host Key (Right Ctrl) + F = Fullscreen
@@ -220,12 +165,6 @@ Search for harmless joke programs:
 - **Use linked clones** to save disk space
 - **Export/Import VMs** to share with friends
 
-### 🎯 Interactive Question 5
-**"What would you name your VM fleet if you had 10 of them?"**
-
-*Fun answers: The Avengers, Pokemon names, Star Wars characters, Food items*
-
----
 
 ## Wrap-Up & Resources 🎓
 
@@ -236,48 +175,18 @@ Search for harmless joke programs:
 ✅ The importance of snapshots and backups  
 ✅ What happens when things go wrong (safely!)  
 
-### Homework Challenges (Optional) 🏠
-1. **Easy:** Create a VM and install your favorite Linux distro
-2. **Medium:** Set up two VMs that can talk to each other on a network
-3. **Hard:** Create a VM, snapshot it, break it, restore it, and document the process
-4. **Chaotic:** Find 5 different silly ways to make a VM act weird (no actual viruses!)
-
 ### Useful Resources
 - **VirtualBox Manual:** [virtualbox.org/manual](https://www.virtualbox.org/manual/)
 - **Ubuntu Tutorial:** [ubuntu.com/tutorials](https://ubuntu.com/tutorials)
 - **r/virtualbox:** Reddit community for help
 - **YouTube:** Tons of VM tutorials and destruction videos!
 
-### Final Safety Reminder ⚠️
+### Safety Reminder
 Remember: Everything we did today was in a **virtual machine**. Never run destructive commands, unknown software, or test viruses on your actual computer. VMs are your playground - use them wisely!
 
 ---
 
-## Q&A Time! 🙋
-
-**Common Questions:**
-
-**Q: Can I run a VM inside a VM?**  
-A: Yes! It's called nested virtualization. But it's slow and usually not worth it unless you're doing something specific.
-
-**Q: Will a VM slow down my computer?**  
-A: Only while it's running! And only as much as the resources you've allocated to it.
-
-**Q: Can viruses escape from a VM?**  
-A: Extremely rare, but technically possible with very sophisticated malware. For learning purposes, you're totally safe!
-
-**Q: Can I use VMs for gaming?**  
-A: Not really. VMs have poor graphics performance. Use dual-boot for gaming instead.
-
-**Q: How much does VirtualBox cost?**  
-A: It's free! 🎉
-
-**Q: What's the difference between VirtualBox, VMware, and Hyper-V?**  
-A: They're all hypervisors. VirtualBox is free and beginner-friendly. VMware has better performance but costs money. Hyper-V comes with Windows Pro but is more complex.
-
----
-
-## Instructor Notes 📝
+## Misc Notes
 
 ### Setup Before Class
 - Pre-download VirtualBox installers for all platforms
@@ -299,10 +208,12 @@ A: They're all hypervisors. VirtualBox is free and beginner-friendly. VMware has
 
 ### Troubleshooting Common Issues
 - **"VirtualBox won't install":** Check if Hyper-V is enabled (Windows)
+- [Windows 11](https://techcommunity.microsoft.com/blog/educatordeveloperblog/step-by-step-enabling-hyper-v-for-use-on-windows-11/3745905)
+- [Windows 10](https://techcommunity.microsoft.com/blog/itopstalkblog/step-by-step-enabling-hyper-v-for-use-on-windows-10/267945)
 - **"VM won't start":** Check virtualization is enabled in BIOS
 - **"Installation is slow":** Allocate more resources or use lighter OS
 - **"Can't see mouse":** Install Guest Additions
 
 ---
 
-**Have fun and stay safe! Remember: Break VMs, not your computer! 💻✨**
+**Have fun and stay safe! Remember: Break VMs, not your computer!**
