@@ -30,7 +30,13 @@ A **Virtual Machine (VM)** is like a computer inside your computer! It's a softw
 - **Fun:** Destroy stuff without real-world damage! 
 
 ### The Magic Behind It
-Your physical computer (the **host**) runs special software called a **hypervisor** (like VirtualBox). This hypervisor creates fake hardware for the **guest** operating system to use. The guest OS thinks it's running on real hardware, but it's actually just software!
+Your physical computer (the **host**) runs special software called a **hypervisor**. 
+
+A hypervisor is software that creates and manages virtual machines (VMs) by dividing your host computer’s hardware (CPU, memory, storage) into isolated virtual environments. It acts as a middle layer between the host machine’s hardware and the VMs, controlling resource allocation and allowing multiple operating systems to run independently on the same physical computer.
+
+In this case the Hypervisors we will be utilizing is called: Virtual Box.
+
+This hypervisor creates fake hardware for the **guest** operating system to use. The guest OS thinks it's running on real hardware, but it's actually just software!
 
 ```
 Your Computer (Host)
