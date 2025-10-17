@@ -21,6 +21,7 @@
 A **Virtual Machine (VM)** is like a computer inside your computer! It's a software program that pretends to be a real computer. Think of it like playing a video game on an emulator - except you're emulating an entire computer!
 
 [Cat](https://docs.google.com/drawings/d/19Biglj-BlIBIH9NKwTgEoH-KjwBo5tVxV5gcJG8ZDJw/edit?usp=sharing)
+
 [VM slides](https://docs.google.com/presentation/d/1UiSBBhunCz0FShyO1dUSLvRld2oKeWTQk33GXhDJMoc/edit?usp=sharing)
 
 ### Why Should You Care?
