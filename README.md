@@ -5,10 +5,9 @@ Welcome to the most fun you'll ever have learning about virtual machines! This r
 ## What's Inside?
 
 This is a **1-hour interactive workshop** that covers:
-- **What is a Virtual Machine?** - The basics explained in a fun, simple way
+- **What is a Virtual Machine?** - The basics explained in a simple way
 - **Setting Up VirtualBox** - Step-by-step guide to creating your first VM
-- **The Great Destruction Demo!** - Safely destroying VMs with silly viruses and chaos
-- **Interactive Questions** - Keep students engaged throughout
+- **The Great Destruction Demo!** - Safely destroying VMs with viruses and chaos
 
 ## Get Started
 
